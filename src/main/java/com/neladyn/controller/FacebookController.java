@@ -203,4 +203,11 @@ public class FacebookController {
             throw new RuntimeException(String.valueOf(exception.getStatusCode()));
         }
     }
+
+
+    @GetMapping("/")
+    public String hello() {
+      return "hello world!";
+    }
+    
 }
