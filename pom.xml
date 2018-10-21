@@ -88,13 +88,15 @@
             </plugin>
     		
     		<!-- add appengine-maven-plugin -->
+        <plugin>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-maven-plugin</artifactId>
+            <version>1.9.12</version>
+            <configuration>
+                <enableJarClasses>false</enableJarClasses>
+            </configuration>
+        </plugin>
             
-		      <plugin>
-		        <groupId>com.google.appengine</groupId>
-		        <artifactId>appengine-maven-plugin</artifactId>
-		        <version>1.9.60</version>
-		      </plugin>
-		      
         </plugins>
     </build>
 
